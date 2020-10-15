@@ -39,7 +39,7 @@
 </head>
 <body>
     <h1>Add a staff member</h1>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" enctype="multipart/form-data">
     <p>
         <label for="first_name">First Name</label>
         <input type="text" name="first_name" id="first_name">
